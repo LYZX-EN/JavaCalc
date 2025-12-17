@@ -2,13 +2,13 @@ public class stayornot {
     public static void stayornot () {
         System.out.print("Stay : ");
 
-        main.stayVar = main.scnStay.nextLine();
+        Variables.stayVar = Variables.scnStay.nextLine();
 
-        if (main.stayVar.equals("yes")) {
-            main.stay = true;
+        if (Variables.stayVar.equals("yes")) {
+            Variables.stay = true;
             main.main();
         } else {
-            main.stay = false;
+            Variables.stay = false;
         }
     }
 }

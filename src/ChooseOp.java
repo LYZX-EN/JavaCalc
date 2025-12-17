@@ -2,15 +2,15 @@ public class ChooseOp {
     public static void ChooseOp () {
         do {
             System.out.print("1.Num : ");
-            int inpNum1 = main.scn.nextInt();
+            int inpNum1 = Variables.scn.nextInt();
 
-            main.scn.nextLine();
+            Variables.scn.nextLine();
 
             System.out.print("(+, -, *, /) : ");
-            String inpOp = main.scn.nextLine();
+            String inpOp = Variables.scn.nextLine();
 
             System.out.print("2.Num : ");
-            int inpNum2 = main.scn.nextInt();
+            int inpNum2 = Variables.scn.nextInt();
 
             switch (inpOp) {
                 case "+":
@@ -29,6 +29,6 @@ public class ChooseOp {
                     Divide.Divide (inpNum1, inpNum2);
                     break;
             }
-        } while (main.stay);
+        } while (Variables.stay);
     }
 }
