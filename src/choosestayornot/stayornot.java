@@ -9,7 +9,7 @@ public class stayornot {
 
         Variables.stayVar = Variables.scnStay.nextLine();
 
-        if (Variables.stayVar.equals("yes")) {
+        if (Variables.stayVar.charAt(0) == 'y') {
             Variables.stay = true;
             main.main();
         } else {
